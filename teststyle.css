@@ -1,0 +1,206 @@
+body{
+    overflow:auto;
+    height: 12000px;
+}
+a:link{
+    color: lightgrey;
+}
+a:visited{
+    color: darkgrey;
+}
+a:hover{
+    color: white;
+}
+#mobile{
+    visibility: hidden;
+}
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+}
+#loading img{
+    position: absolute;
+    margin: auto;
+    width: 20%;
+    top: 45%;
+    left: 45%;
+}
+#main{
+    background: url("bg/bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    height: 100%;
+    width: 6000px;
+
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+}
+h1, h2{
+    margin-left: 0;
+}
+.bgelements{
+    width: 14000px;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+}
+#bg1{
+    background: url("bg/1.png");
+    background-size: 100%;
+}
+#bg2{
+    background: url("bg/2.png");
+    background-size: 100%;
+}
+#bg3{
+    background: url("bg/3.png");
+    background-size: 100%;
+}
+
+.boxes{
+    visiblity: hidden;
+    position: fixed;
+    height: 50%;
+    left: 700px;
+}
+
+.boxes svg{
+    height: 100%;
+}
+
+#box1{
+    top: 10px;
+}
+#box2{
+    bottom: 10px;
+    height: 70%;
+    transform: translate(-50%);
+}
+#box2 .text{
+    margin-top: 2%;
+}
+#box2 h1{
+    margin:0;
+}
+#box3{
+    bottom: 25%;
+    transform: translate(-100%);
+}
+#box4 .text{
+    height: auto;
+    margin: 0;
+}
+#box4{
+    height: 30%;
+    bottom: 70%;
+    left: 38.4%;
+    transform: translateY(50%);
+}
+#box4 .text{
+    height: auto;
+    margin: 0;
+}
+
+#box5{
+    height: 30%;
+    bottom: 30%;
+    left: 38.4%;
+    transform: translateY(50%);
+}
+#box5 .text{
+    height: auto;
+    margin: 0;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 5%;
+    width: 90%;
+    height: 71%;
+    text-align: center;
+    color: white;
+//    word-break: break-all;
+    overflow: hidden;
+}
+path{
+    fill:none;
+    stroke:#ff0000;
+    stroke-width:5px;
+    stroke-dasharray: 900;
+}
+#introbg{
+    postion: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+#launch{
+    position: absolute;
+    margin-top: auto;
+    margin-bottom: auto;
+    bottom: 3%;
+    top: 0;
+    left: 558px;
+    right: 0;
+}
+#rocket{
+    height: 10%;
+    transform: rotate(90deg);
+    position: fixed;
+    margin-top: auto;
+    margin-bottom: auto;
+    bottom: -80%;
+    top: 0;
+    left: 700px;
+    right: 0;
+    z-index: 20;
+}
+#spacemen{
+    height: 4%;
+    position: fixed;
+    margin-top: auto;
+    margin-bottom: auto;
+    bottom: -80%;
+    top: 0;
+    left: 690px;
+    right: 0;
+    z-index: 19;
+    
+}
+#poof{
+    height: 10%;
+    position: fixed;
+    margin-top: auto;
+    margin-bottom: auto;
+    bottom: -6%;
+    top: 0;
+    left: 681px;
+    right: 0;
+    z-index: 18;
+    
+}
+
+.cloud{
+    height: 4%;
+    transform: rotate(90deg);
+    position: fixed;
+    margin-top: auto;
+    margin-bottom: auto;
+    bottom: -80%;
+    top: 0;
+ }
+#cloud1{
+    left: 650px;
+    z-index: 19;
+}
+#cloud2{
+    left: 625px;
+    z-index: 18;
+}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!--    <meta name="viewport" content="width=device-width" />-->
+    <title>A.B. Experiment</title>
+    <link rel="stylesheet" href="teststyle.css" media="screen"/>
+  </head>
+  
+  <body>
+    <script type="text/javascript">
+      if (screen.width <1000){
+	document.location = "mobile.html";
+      }
+    </script>
+
+    <div id="skrollr-body">
+      <div data-0="visibility: hidden" id="loading"><img src="bg/loading.gif" alt="Loading..."></img></div>
+      <div id="main" 
+	   data-0="visibility: visible"
+	   data-2000="left: 0px" 
+	   data-2700="left: -400px" 
+	   data-3500="left: -400px" 
+	   data-4000="left: -764px" 
+	   data-4500="left: -764px" 
+	   data-5000="left: -1200px" 
+	   data-5800="left: -1200px" 
+	   data-6300="left: -2000px"
+	   data-7000="left: -2000px"
+	   data-8000="left:-3000px">
+	<div id="introbg"
+	     data-0="opacity: 1;"
+	     data-1500="opacity: 1"
+	     data-2000="opacity: 0">
+	</div>
+	<div id="bg1" class="bgelements" data-2000="left:0px" data-7000="left: -3000px;"></div>
+	<div id="bg2" class="bgelements" data-2000="left:0px;" data-7000="left: -7000px;"></div>
+	<div id="bg3" class="bgelements" data-2000="left:0px;" data-7000="left: -14000px;"></div>
+	
+	<img src="bg/launch.png" id="launch"
+	     data-1500="opacity: 1;"
+	     data-2000="opacity: 0;"
+	     />
+	<img src="bg/rocket.png" id="rocket" 
+	     data-0="transform: rotate(0deg); bottom: 0%; left:700px;"
+	     data-100="transform: rotate(0deg); bottom: 0%; left:700px;"
+	     data-500="transform: rotate(-90deg); bottom: 50%; left: 500px;"
+	     data-1000="transform: rotate(-180deg); bottom: 0%; left: 400px"
+	     data-1500="transform: rotate(-210deg); bottom: -60%; left: 500px;"
+	     data-2000="transform: rotate(-270deg); bottom: -80%; left: 700px;"
+	     data-2500="transform: rotate(-260deg)"
+	     data-3000="transform: rotate(-280deg)"
+	     data-3500="transform: rotate(-260deg); bottom: -80%;"
+	     data-4000="transform: rotate(-360deg); bottom: -60%;"
+	     data-4500="transform: rotate(-300deg); bottom: 60%;"
+	     data-5000="transform: rotate(-280deg); bottom: 80%;"
+	     data-5500="transform: rotate(-260deg)"
+	     data-6000="transform: rotate(-280deg)"
+	     data-6500="transform: rotate(-260deg)"
+	     data-7000="transform: rotate(-280deg);"
+	     data-7500="transform: rotate(-260deg); left: 500px;"
+	     data-8000="transform: rotate(-270deg); left: 50px; left: 1%;"
+	     data-8500="transform: rotate(-180deg); bottom: 60%; left: 10%;"
+	     data-9000="transform: rotate(-190deg); bottom: 40%;"
+	     data-9500="transform: rotate(-170deg); bottom: 40%;"
+	     data-10000="transform: rotate(-190deg); bottom: 40%;"
+	     data-10500="transform: rotate(-170deg); bottom: -40%;"
+	     data-11000="transform: rotate(-190deg); bottom: -40%;"
+	     data-11500="transform: rotate(-170deg); bottom: -40%;"
+	     data-12000="transform: rotate(-190deg); bottom: -125%;"
+	     />
+	<img src="bg/spacemen.png" id="spacemen"
+	     data-2000="visibility: hidden; left: 690px;"
+	     data-2700="visibility: visible; bottom: -80%;"
+	     data-3000="visibility: visible; bottom: -3%;"
+	     data-3500="visibility: hidden; bottom: -80%;"
+	     data-5000="visibility: visible; bottom: 80%;"
+	     data-5300="visibility: visible; bottom: 45%;"
+	     data-5800="visibility: hidden; bottom: 80%;"
+	     data-6300="visibility: visible; bottom: 80%;"
+	     data-6600="visibility: visible; bottom: 50%;"
+	     data-7000="visibility: hidden; bottom: 80%;"
+	     data-9000="visibility: visible; bottom: 40%; left: 10%;"
+	     data-9500="visibility: visible; bottom: 40%; left: 38.4%;"
+	     data-10000="visibility: hidden; bottom: 40%; left: 10%;"
+	     data-10500="visibility: visible; bottom: -40%; left: 10%;"
+	     data-11000="visibility: visible; bottom: -40%; left: 38.4%;"
+	     data-11500="visibility: hidden; bottom: -40%; left: 10%;"
+
+	     />
+	<img src="bg/poof.png" id="poof"
+	     data-2000="visibility: hidden"
+	     data-3000="visibility: visible; height: 1%; opacity: 1; left: 698px; bottom: -3%;"
+	     data-3500="visibility: hidden; height: 10%; opacity: 0; left: 675px; bottom: -4%;"
+	     data-5300="visibility: visible; height: 1%; opacity: 1; left: 697px; bottom: 43%;"
+	     data-5700="visibility: hidden; height: 10%; opacity: 0; left: 673px; bottom: 43%;"
+	     data-6600="visibility: visible; height: 1%; opacity: 1; left: 697px; bottom: 50%;"
+	     data-7000="visibility: hidden; height: 10%; opacity: 0; left: 673px; bottom: 50%;"
+	     data-9500="visibility: visible; height: 1%; opacity: 1; left: 38.4%; bottom: 40%;"
+	     data-10000="visibility: hidden; height: 10%; opacity: 0; left: 37.4%; bottom: 40%;"
+	     data-11000="visibility: visible; height: 1%; opacity: 1; left: 38.4%; bottom: -40%;"
+	     data-11500="visibility: hidden; height: 10%; opacity: 0; left: 37.4%; bottom: -40%;"
+
+	     
+	     />
+	<img src="bg/cloud.png" id="cloud1" class="cloud"
+	     data-0="opacity: 0"
+	     data-100="transform: rotate(0deg); bottom: -13%; left:700px; opacity: 1;"
+	     data-500="transform: rotate(-90deg); bottom: 50%; left: 575px;"
+	     data-1000="transform: rotate(-180deg); bottom: 13%; left: 400px"
+	     data-1500="transform: rotate(-210deg); bottom: -52%; left: 475px;"
+	     data-2000="transform: rotate(-270deg); top: 0%; bottom: -80%; left: 650px;"
+	     data-2500="transform: rotate(-260deg); top: -1%;"
+	     data-3000="transform: rotate(-280deg); top: 1%;"
+	     data-3500="transform: rotate(-260deg); top: -1%; bottom: -80%; left: 650px;"
+	     data-4000="transform: rotate(-370deg); top: 1%; bottom: -75%; left: 710px;"
+	     data-4500="transform: rotate(-300deg); top: -1%; bottom: 50%; left: 650px;"
+	     data-5000="transform: rotate(-280deg); top: 1%; bottom: 80%;"
+	     data-5500="transform: rotate(-260deg); top: -1%;"
+	     data-6000="transform: rotate(-280deg); top: 1%;"
+	     data-6500="transform: rotate(-260deg); top: -1%;"
+	     data-7000="transform: rotate(-280deg); top: 0%;"
+	     data-7500="transform: rotate(-290deg); left: 450px;"
+	     data-8000="transform: rotate(-270deg); left: -25px; left: -1%;"
+	     data-8500="transform: rotate(-180deg); bottom: 75%; left: 10%;"
+	     data-9000="transform: rotate(-190deg); bottom: 55%; left: 9%;"
+	     data-9500="transform: rotate(-170deg); bottom: 55%; left: 11%;"
+	     data-10000="transform: rotate(-190deg); bottom: 55%; left: 9%;"
+	     data-10500="transform: rotate(-170deg); bottom: -25%; left: 11%;"
+	     data-11000="transform: rotate(-190deg); bottom: -25%; left: 9%;"
+	     data-11500="transform: rotate(-170deg); bottom: -25%; left: 11%;"
+	     data-12000="transform: rotate(-190deg); bottom: -110%; left: 9%;"
+	     
+	     />
+	<img src="bg/cloud.png" id="cloud2" class="cloud" 
+	     data-0="opacity: 0"
+	     data-2000="transform: rotate(90deg); top: 0%; opacity: 0;"
+	     data-2500="transform: rotate(80deg); top: 1%; opacity: 1;"
+	     data-3000="transform: rotate(100deg); top: -1%;"
+	     data-3500="transform: rotate(80deg); top: 1%;opacity: 1;"
+	     data-4000="transform: rotate(100deg); top: -1%;opacity: 0; bottom: -80%;"
+	     data-4800="transform: rotate(80deg); top: 1%; opacity: 0; bottom: 80%;"
+	     data-5000="transform: rotate(100deg); top: -1%; opacity: 1;"
+	     data-5500="transform: rotate(80deg); top: 1%;"
+	     data-6000="transform: rotate(100deg); top: -1%;"
+	     data-6500="transform: rotate(80deg); top: 1%;"
+	     data-7000="transform: rotate(100deg); top: 0%; left: 625px;"
+	     data-7500="transform: rotate(80deg); left: 425px;"
+	     data-8000="transform: rotate(90deg); left: -50px;"	     
+	     />
+	<div id="box1"
+	     class="boxes"
+	     data-3000="visibility: visible;"
+	     data-3500="left: 700px"
+	     data-4000="left: 210px"
+	     data-4500="left: 210px"
+	     data-5500="left: -1300px"
+	     >
+	  <div class="text"
+	       data-0="visibility: hidden"
+	       data-3200="visibility: visible; opacity: 0;"
+	       data-3500="visibility: visible; opacity: 1;"
+	       >
+	    <h1>Hi there, I'm Alex</h1>
+	    <img src="https://avatars1.githubusercontent.com/u/7023229?v=3&s=4460" alt="photo" style="width: 50%;"></img>
+	  </div>
+	  <svg viewBox="0 0 421.95065 423.00632">
+	    <g transform="translate(131.1517,133.17457)">
+	      <path 
+		 data-0="fill: rgba(0,0,0,0);"
+		 data-3000="stroke-dashoffset: 900; fill:rgba(0,0,0,0);"
+		 data-3500="stroke-dashoffset: 0; fill: rgba(100,100,100,0.3)"
+		 style="fill-rule:evenodd;stroke:white;stroke-width:3;stroke-opacity:1" 
+		 d="m -129.33866,288.77911 0,-315.449232 102.723333,-103.484758 211.476957,-1.51524 52.61394,52.417378" />
+	      <path
+		 data-0="fill: rgba(0,0,0,0);"
+		 data-3000="stroke-dashoffset: 900; fill:rgba(0,0,0,0);"
+		 data-3500="stroke-dashoffset: 0; fill: rgba(100,100,100,0.3)"
+		 style="fill:none;fill-rule:evenodd;stroke:white;stroke-width:3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+		 d="m -129.15171,288.33181 315.44919,0 103.48476,-102.72333 1.51233,-213.036222 -54.00603,-52.00603" />
+	    </g>
+	  </svg>
+	</div>
+	<div id="box2" 
+	     class="boxes"
+	     data-0="visibility:hidden;"
+	     data-5300="visibility:visible;"
+	     data-5800="left: 700px;"
+	     data-6500="left: -1300px"
+	     >
+	  <div class="text"
+	       data-0="visibility: hidden"
+	       data-5300="visibility: visible; opacity: 0;"
+	       data-5600="visibility: visible; opacity: 1;"
+	       >
+	    <div>
+	      <h1>I do cool stuff on the internet</h1>
+	    </div>
+	    <div>
+	      <div style="float: left; width: 50%;">
+		<h2>Flickr Quizz</h2>
+		<a href="http://176.31.165.215:8081"><img src="bg/flickr.jpg" alt="mytree_logo" style="width: 35%;"></img></a>
+		<p>FlickrQuizz is a web-based game using Flickr and Google APIs where the player has to guess locations of random pictures within a city.</p>
+		<h3><a href="http://176.31.165.215:8081">Demo</a> - <a href="https://github.com/TTalex/FlickrQuizz">Source</a></h3>
+	      </div>
+	      <div style="float: right; width: 50%;">
+		<h2>My Tree</h2>
+		<a href="/MyTree/en"><img src="https://raw.githubusercontent.com/TTalex/MyTree/master/MyTreeLogo.png" alt="mytree_logo" style="width: 40%;"></img></a>
+		<p>MyTree uses the opendata Paris database to retrieve planting dates of trees in the capital city, a list of trees planted near your birth date is then generated and displayed on a google map.</p>
+		<h3><a href="/MyTree/en">Demo</a> - <a href="https://github.com/TTalex/MyTree">Source</a></h3>
+	      </div>
+	    </div>
+	  </div>
+	  <svg viewBox="0 0 498.96475 256.90077">
+	    <g transform="translate(3.3053752e-8,0.04593467)">
+	      <path 
+		 data-0="fill: rgba(0,0,0,0);"
+		 data-5300="stroke-dashoffset: 900; fill:rgba(0,0,0,0);"
+		 data-5800="stroke-dashoffset: 0; fill: rgba(100,100,100,0.3)"
+		 style="fill-rule:evenodd;stroke:white;stroke-width:1;stroke-opacity:1" 
+		 d="m 249.42347,0.31559098 24.80984,29.06132702 155.06151,0 69.11314,59.979152 0,106.96282 -69.11314,59.97915 -179.87135,0" />
+	    </g>
+	    <g transform="translate(3.3053752e-8,-795.46145)">
+	      <path
+		 data-0="fill: rgba(0,0,0,0);"
+		 data-5300="stroke-dashoffset: 900; fill:rgba(0,0,0,0);"
+		 data-5800="stroke-dashoffset: 0; fill: rgba(100,100,100,0.3)"
+		 style="fill-rule:evenodd;stroke:white;stroke-width:1;stroke-opacity:1"
+		 d="m 249.54128,795.82296 -24.80984,29.06133 -155.061511,0 -69.11313886,59.97915 0,106.96282 69.11313886,59.97914 179.871351,0"
+       
+		 />
+	    </g>
+	  </svg>
+	</div>
+	<div id="box3" class="boxes"
+	     data-0="visibility:hidden;"
+	     data-6600="visibility:visible;"
+	     data-7000="left: 700px;"
+	     data-8000="left: -300px">
+	  <div class="text"
+	       data-0="visibility: hidden"
+	       data-6600="visibility: visible; opacity: 0;"
+	       data-6800="visibility: visible; opacity: 1;"
+	       >
+	    <h2>And you can find all sources on my GitHub page!</h2>
+	    <a href="http://github.com/TTalex"><img src="bg/github_logo.png" alt="github" style="width: 80%;"></img></a>
+	  </div>
+
+	  <svg 
+	     viewbox="0 0 421.95 423.006">
+	    <g
+	       transform="translate(131.1517,133.17457)">
+	      <path
+		 data-0="fill: rgba(0,0,0,0);"
+		 data-6600="stroke-dashoffset: 900; fill:rgba(0,0,0,0);"
+		 data-7000="stroke-dashoffset: 0; fill: rgba(100,100,100,0.3)"
+		 style="fill-rule:evenodd;stroke:white;stroke-width:3;stroke-opacity:1"
+		 d="m 289.98594,-131.12187 0,315.44924 -102.72334,103.48475 -211.476953,1.51524 -51.61394,-51.41737"
+		 />
+	      <path
+		 data-0="fill: rgba(0,0,0,0);"
+		 data-6600="stroke-dashoffset: 900; fill:rgba(0,0,0,0);"
+		 data-7000="stroke-dashoffset: 0; fill: rgba(100,100,100,0.3)"
+		 style="fill-rule:evenodd;stroke:white;stroke-width:3;stroke-opacity:1"
+		 d="m 290.798,-131.67 -315.4491,0 -103.484,102.72333 -1.51233,213.0362 54.006,54.006"
+		 />
+	    </g>
+	  </svg>
+	</div>
+	
+	<div id="box4" 
+	     class="boxes" 
+	     data-0="visibility:hidden;"
+	     data-9500="visibility:visible;">
+	  <div class="text" style="margin-left: 10%;"
+	       data-0="visibility: hidden"
+	       data-9500="visibility: visible; opacity: 0;"
+	       data-9800="visibility: visible; opacity: 1;">
+	    <h2>I enjoy when things connect nicely.</h2>
+	  </div>
+	  <svg   
+	     viewBox="0 0 326.23706 148.646">
+	    <g
+	       transform="translate(1.0312243e-7,-108.20883)">
+	      <path
+		 data-9500="stroke-dashoffset: 900; fill:rgba(0,0,0,0);"
+		 data-10000="stroke-dashoffset: 0; fill: rgba(100,100,100,0.3)"
+
+		 style="fill-rule:evenodd;stroke:white;stroke-width:1px;stroke-opacity:1"
+		 d="M 0.1135562,182 29.21323,172.286 l -1.67e-4,-36.1117 27.119698,-27.6133 243.551969,0 26,27.6133 1.7e-4,46.02416"
+		 />
+	      <path
+		 data-9500="stroke-dashoffset: 900; fill:rgba(0,0,0,0);"
+		 data-10000="stroke-dashoffset: 0; fill: rgba(100,100,100,0.3)"
+
+		 style="fill-rule:evenodd;stroke:white;stroke-width:1px;stroke-opacity:1"
+		 d="m 0,182 29.09967377,9.91247 -1.67e-4,36.11169 27.119698,27.61329 243.551969,0 26,-27.61329 0,-46.02416"
+		 />
+	    </g>
+	  </svg>
+	</div>
+	
+	<div id="box5" 
+	     class="boxes" 
+	     data-0="visibility:hidden;"
+	     data-11000="visibility:visible;">
+	  <div class="text" style="margin-left: 10%;"
+	       data-0="visibility: hidden"
+	       data-11000="visibility: visible; opacity: 0;"
+	       data-11300="visibility: visible; opacity: 1;">
+	    <h2>Maybe so should we !</h2>
+	    <a href="http://linkedin.com/pub/alex-bourreau/77/448/951"><img src="bg/linkedin.png" style="width: 40%;"></img></a>
+	  </div>
+	  <svg   
+	     viewBox="0 0 326.23706 148.646">
+	    <g
+	       transform="translate(1.0312243e-7,-108.20883)">
+	      <path
+		 data-11000="stroke-dashoffset: 900; fill:rgba(0,0,0,0);"
+		 data-11500="stroke-dashoffset: 0; fill: rgba(100,100,100,0.3)"
+
+		 style="fill-rule:evenodd;stroke:white;stroke-width:1px;stroke-opacity:1"
+		 d="M 0.1135562,182 29.21323,172.286 l -1.67e-4,-36.1117 27.119698,-27.6133 243.551969,0 26,27.6133 1.7e-4,46.02416"
+		 />
+	      <path
+		 data-11000="stroke-dashoffset: 900; fill:rgba(0,0,0,0);"
+		 data-11500="stroke-dashoffset: 0; fill: rgba(100,100,100,0.3)"
+
+		 style="fill-rule:evenodd;stroke:white;stroke-width:1px;stroke-opacity:1"
+		 d="m 0.11355623,182 29.09967377,9.91247 -1.67e-4,36.11169 27.119698,27.61329 243.551969,0 26,-27.61329 1.7e-4,-46.02416"
+		 />
+	    </g>
+	  </svg>
+	</div>
+      </div>
+    </div>
+    <script type="text/javascript" src="skrollr.min.js"></script>
+    <script type="text/javascript">
+      window.onload= function(){
+      var s = skrollr.init({forceHeight: true});
+      }
+    </script>
+
+  </body>
+</html>
